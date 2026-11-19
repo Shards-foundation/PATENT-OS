@@ -19,7 +19,7 @@ PatentOS is a high-performance, autonomous agentic interface designed to identif
 ### 🚀 Quick Start
 
 **1. Prerequisites**
-*   Node.js v18+
+*   Node.js 22.12 or later
 *   Google Gemini API Key
 
 **2. Installation**
