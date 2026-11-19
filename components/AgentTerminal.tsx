@@ -56,7 +56,7 @@ export const AgentTerminal: React.FC<AgentTerminalProps> = ({ logs }) => {
                 log.type === 'error' ? 'text-red-500' :
                 'text-[#00f3ff]/70'
                 }`}>
-                {log.type === 'action' && <span className="mr-2 text-[#00f3ff]">></span>}
+                {log.type === 'action' && <span className="mr-2 text-[#00f3ff]">&gt;</span>}
                 {log.type === 'success' && <span className="mr-2 text-green-400">SUCCESS:</span>}
                 {log.type === 'error' && <span className="mr-2 text-red-500">FATAL:</span>}
                 {log.message}

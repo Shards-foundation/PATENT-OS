@@ -14,12 +14,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v7
         with:
-          node-version: 20
-          # cache: "npm"
+          node-version: 22
       - name: Install dependencies
-        run: npm ci
+        run: npm ci --engine-strict
       - name: Type check
-        run: npm run build -- --noEmit || npx tsc --noEmit || echo "No type check script"
+        run: npm exec -- tsc --noEmit
       - name: Build
-        run: npm run build || echo "No build script"
+        run: |
+          npm run build
+          if ! grep -Eq '<script[^>]*type="module"[^>]*src="[^"]+"' dist/index.html; then
+            echo "::error::The built HTML does not load the application module."
+            exit 1
+          fi
 

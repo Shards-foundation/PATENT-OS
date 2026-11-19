@@ -65,7 +65,7 @@ export const PatentList: React.FC<PatentListProps> = ({ patents, onSelect, selec
               </h3>
               
               <div className="flex items-center text-[10px] text-gray-500 mb-4 font-mono tracking-wider">
-                  <span className="mr-2 text-[#00f3ff]">></span>
+                  <span className="mr-2 text-[#00f3ff]">&gt;</span>
                   <span className="text-white uppercase opacity-70">{patent.assignee}</span>
               </div>
 

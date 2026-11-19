@@ -47,10 +47,10 @@ export const Sidebar: React.FC<SidebarProps> = ({ sortMode, onModeChange }) => {
                     <h4 className="text-[#00f3ff] font-bold text-[10px] uppercase tracking-widest">Live Uplink</h4>
                 </div>
                 <p className="text-[10px] text-blue-200/60 font-mono leading-relaxed">
-                    > Scanning USPTO/EPO<br/>
-                    > Filtering: Active UK<br/>
-                    > Latency: 42ms<br/>
-                    > Encryption: ON
+                    &gt; Scanning USPTO/EPO<br/>
+                    &gt; Filtering: Active UK<br/>
+                    &gt; Latency: 42ms<br/>
+                    &gt; Encryption: ON
                 </p>
             </div>
         </div>
